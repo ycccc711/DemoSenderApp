@@ -22,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //call the method sendBroadcast() to send this broadcast to all receivers in an undefined order
                 Intent intent = new Intent("com.example.broadcast.MY_BROADCAST");
+                //sender and receiver package name must same
+                //Intent intent = new Intent("com.example.broadcast.hello");
                 sendBroadcast(intent);
             }
         });
